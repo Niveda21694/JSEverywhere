@@ -1,2 +1,2 @@
 # JSEverywhere
-A repository that demantles Javascript
+A repository that dismantles Javascript
