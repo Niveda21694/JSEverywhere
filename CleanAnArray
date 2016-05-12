@@ -1,0 +1,40 @@
+#Here's the way how to clean an array
+To be simple, how to remove null, undefined and empty spaces from your array  
+                (OR)
+a way to remove elements from an array
+
+Code:
+
+var myArray = [1, "adbh", "", " ", null, undefined];
+for(var i=0 ; i< myArray.length ;i++){
+    if(myArray[i]=="null" || myArray[i]=="" || myArray[i]== 'undefined'){
+    myArray.splice(i);
+    }
+}
+console.log(myArray);
+
+
+
+Description:
+Splice(start, end, items to be added)
+
+Example 1:
+var myarray = ["hello","world","i","am","niveda"];
+myarray.splice(0, 2, "i", "love", "javascript");
+console.log(myarray);
+
+0 - index of an array from where the elements should be removed
+2 - the number of elements to be removed starting from the index specified in start param
+items - values to added
+
+Output: ["i", "love", "javascript", "i", "am", "niveda"]
+
+
+Example 2:
+var myarray = ["hello","world","i","am","niveda"];
+myarray.splice(0, 2); //This removes elements starting from index 0.
+console.log(myarray);
+
+Output:["i", "am", "niveda"]
+
+
